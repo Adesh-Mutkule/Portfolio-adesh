@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Adesh Mutkule | Full Stack Developer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Adesh Mutkule</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Section -->
+    <section class="blog-section py-5 mt-5">
+        <div class="container">
+            <h1 class="section-title text-center mb-5">My Blog</h1>
+            
+            <div class="row">
+                <!-- Blog Post 1 -->
+                <div class="col-lg-8 mx-auto">
+                    <div class="blog-post mb-5">
+                        <img src="assets/images/blog/1.png" alt="React Best Practices" class="img-fluid rounded mb-4">
+                        <div class="post-meta mb-3">
+                            <span class="post-date"><i class="far fa-calendar-alt me-2"></i>June 15, 2023</span>
+                            <span class="post-category ms-3"><i class="far fa-folder me-2"></i>Web Development</span>
+                            <span class="post-comments ms-3"><i class="far fa-comment me-2"></i>5 Comments</span>
+                        </div>
+                        <h2 class="post-title">React Best Practices for 2023</h2>
+                        <p class="post-excerpt">In this post, I'll share the most important React best practices that every developer should follow in 2023 to build maintainable and performant applications...</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                    
+                    <!-- Blog Post 2 -->
+                    <div class="blog-post mb-5">
+                        <img src="assets/images/blog/2.images.png" alt="Node.js Performance" class="img-fluid rounded mb-4">
+                        <div class="post-meta mb-3">
+                            <span class="post-date"><i class="far fa-calendar-alt me-2"></i>May 28, 2023</span>
+                            <span class="post-category ms-3"><i class="far fa-folder me-2"></i>Backend Development</span>
+                            <span class="post-comments ms-3"><i class="far fa-comment me-2"></i>3 Comments</span>
+                        </div>
+                        <h2 class="post-title">Optimizing Node.js Application Performance</h2>
+                        <p class="post-excerpt">Node.js is known for its performance, but there are several techniques you can use to make your applications even faster. Here are my top tips...</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                    
+                    <!-- Blog Post 3 -->
+                    <div class="blog-post mb-5">
+                        <img src="assets/images/blog/5.image.jpg" alt="Responsive Design" class="img-fluid rounded mb-4" style="height: 200px;">
+                        <div class="post-meta mb-3">
+                            <span class="post-date"><i class="far fa-calendar-alt me-2"></i>April 10, 2023</span>
+                            <span class="post-category ms-3"><i class="far fa-folder me-2"></i>UI/UX Design</span>
+                            <span class="post-comments ms-3"><i class="far fa-comment me-2"></i>8 Comments</span>
+                        </div>
+                        <h2 class="post-title">Advanced Responsive Design Techniques</h2>
+                        <p class="post-excerpt">Responsive design has evolved beyond simple media queries. Learn about modern techniques like container queries, CSS grid, and more...</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                    
+                    <!-- Pagination -->
+                    <nav aria-label="Blog pagination">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section py-5 bg-light">
+        <div class="container">

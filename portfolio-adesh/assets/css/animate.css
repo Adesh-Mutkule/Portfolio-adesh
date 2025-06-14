@@ -1,0 +1,162 @@
+/* Animate.css - Animation classes for your portfolio */
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+/* Fade In */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+/* Fade In Down */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+
+/* Fade In Up */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+/* Bounce In */
+@keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  0% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+    transform: scale3d(.9, .9, .9);
+  }
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+    transform: scale3d(.97, .97, .97);
+  }
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+.bounceIn {
+  animation-name: bounceIn;
+}
+
+/* Pulse */
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.pulse {
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+}
+
+/* Slide In Left */
+@keyframes slideInLeft {
+  from {
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slideInLeft {
+  animation-name: slideInLeft;
+}
+
+/* Zoom In */
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.zoomIn {
+  animation-name: zoomIn;
+}
+
+/* Flip In X */
+@keyframes flipInX {
+  from {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    opacity: 0;
+  }
+  40% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+  }
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+  80% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+  to {
+    transform: perspective(400px);
+  }
+}
+.flipInX {
+  animation-name: flipInX;
+  backface-visibility: visible !important;
+}
+
+/* Animation Delays */
+.delay-1 { animation-delay: 0.5s; }
+.delay-2 { animation-delay: 1s; }
+.delay-3 { animation-delay: 1.5s; }
+.delay-4 { animation-delay: 2s; }
+
+/* Animation Durations */
+.fast { animation-duration: 0.5s; }
+.slow { animation-duration: 2s; }
+.slower { animation-duration: 3s; }
+
+/* Animation Timing */
+.ease { animation-timing-function: ease; }
+.ease-in { animation-timing-function: ease-in; }
+.ease-out { animation-timing-function: ease-out; }
+.ease-in-out { animation-timing-function: ease-in-out; }
